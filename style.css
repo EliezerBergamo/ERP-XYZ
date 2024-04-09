@@ -1,0 +1,456 @@
+:root {
+    --azul-escuro: #376cfbff;
+    --azul-medio: #4294ff;
+    --azul: #e6ecff;
+    --cinza-escuro: #2d2d34ff;
+    --cinza-claro: #f2f2f2ff;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* Utilitários */
+.fonte-azul {
+    color: var(--azul-medio);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Barra de navegação */
+nav {
+    background-color: var(--cinza-escuro);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+}
+
+nav .logo {
+    display: inline;
+}
+
+nav p {
+    display: inline;
+    color: var(--branco);
+    font-size: 1.6rem;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin: 0 0.3rem;
+    transition: color 0.15s ease;
+}
+
+nav ul li a:hover {
+    color: var(--azul-medio);
+}
+
+nav ul li button {
+    background-color: var(--azul-medio);
+    border: 0;
+    border-radius: 0.25rem;
+}
+
+nav ul li button a {
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 0.25rem;
+    text-transform: uppercase;
+}
+
+nav ul li button:hover {
+    background: var(--cinza-claro);
+}
+
+nav ul li button:hover a {
+    color: var(--cinza-escuro);
+}
+
+@media(max-width: 450px) {
+    nav ul li a {
+        display: none;
+    }
+}
+
+/* Section: Hero */
+#hero {
+    background-color: var(--cinza-claro);
+    padding: 10rem 0;
+}
+
+#hero div.texto-hero,
+#hero div.imagem-hero {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#hero input {
+    padding: 0.5rem;
+    border: 0;
+}
+
+@media(max-width: 800px) {
+    #hero {
+        padding: 8rem 16px;
+    }
+
+    #hero div.texto-hero,
+    #hero div.imagem-hero {
+        display: block;
+        width: 100%;
+    }
+
+    #hero div.texto-hero {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    #hero div.imagem-hero {
+        text-align: center;
+    }
+
+    #hero div.imagem-hero img {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+/* Section: Clientes */
+#clientes {
+    padding: 5rem 0;
+    background-color: var(--cinza-escuro);
+    text-align: center;
+}
+
+#clientes h2 {
+    color: var(--branco);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#clientes p {
+    color: var(--branco);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#clientes .clientes img {
+    max-height: 50px;
+    margin: 1.5rem;
+    filter: grayscale(0.5);
+}
+
+@media(max-width: 800px) {
+    #clientes {
+        padding: 4rem 16px;
+    }
+
+    #clientes .clientes img {
+        display: block;
+        margin: 0 auto 2rem auto;
+    }
+}
+
+/* Section: Diferenciais */
+#diferenciais {
+    background-color: #f2f2f2;
+    color: var(--cinza-escuro);
+    padding: 2rem 0;
+}
+
+#diferenciais .diferencial {
+    background-color: var(--branco);
+    width: 29.3333%;
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#diferenciais .diferencial img {
+    margin-bottom: 1.5rem;
+}
+
+#diferenciais .diferencial h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#diferenciais .diferencial p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#diferenciais .diferencial a {
+    font-size: 1.35rem;
+    color: var(--cinza-escuro);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media(max-width: 800px) {
+    #diferenciais {
+        padding: 2rem 16px;
+    }
+    
+    #diferenciais .diferencial {
+        display: block;
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+}
+
+/* Section: Características */
+#caracteristicas {
+    background-color: var(--branco);
+    padding: 12rem 0;
+}
+
+#caracteristicas h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+#caracteristicas .caracteristica.alinhamento-direita .texto {
+    text-align: right;
+}
+
+#caracteristicas .caracteristica.alinhamento-direita .imagem {
+    float: right;
+}
+
+#caracteristicas .caracteristica {
+    margin: 20rem 0;
+}
+
+#caracteristicas .caracteristica .imagem {
+    float: left;
+}
+
+#caracteristicas .caracteristica .imagem img {
+    max-width: 250px;
+}
+
+#caracteristicas .caracteristica .texto h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#caracteristicas .caracteristica .texto p {
+    font-size: 2.25rem;
+    font-weight: 100;
+}
+
+@media(max-width: 800px) {
+    #caracteristicas {
+        padding: 8rem 16px;
+    }
+
+    #caracteristicas .caracteristica {
+        text-align: center;
+        margin: 10rem 0;
+    }
+
+    #caracteristicas .caracteristica .imagem {
+        float: none;
+    }
+
+    #caracteristicas .caracteristica .imagem img {
+        margin-bottom: 2rem;
+    }
+
+    #caracteristicas .caracteristica.alinhamento-direita .imagem {
+        float: none;
+    }
+
+    #caracteristicas .caracteristica.alinhamento-direita .texto {
+        text-align: center;
+    }
+}
+
+/* Section: Planos */
+#planos {
+    background-color: var(--cinza-claro);
+    padding: 6rem 0;
+}
+
+#planos h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+#planos .planos {
+    display: flex;
+}
+
+#planos .planos .plano {
+    background-color: var(--branco);
+    border-radius: 12px;
+    width: 29.3333%;
+    display: inline-block;
+    margin: 2%;
+    height: 550px;
+    position: relative;
+    padding: 4%;
+    border: 1px solid transparent;
+    transition: all 0.15s;
+}
+
+#planos .planos .plano:hover {
+    border-color: var(--cinza-escuro);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+}
+
+#planos .planos .plano h3 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#planos .planos .plano h4 {
+    font-size: 2.75rem;
+    color: var(--azul-escuro);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#planos .planos .plano ul {
+    list-style: none;
+}
+
+#planos .planos .plano ul li {
+    font-size: 1.5rem;
+    padding: 16px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#planos .planos .plano button {
+    width: 72%;
+    background-color: var(--azul-medio);
+    padding: 16px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 1.75rem;
+    color: var(--branco);
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 7%;
+    transition: background-color 0.15s;
+}
+
+#planos .planos .plano button:hover {
+    background-color: var(--cinza-escuro);
+}
+
+@media(max-width: 800px) {
+    #planos {
+        padding: 4rem 16px;
+    }
+
+    #planos h2 {
+        margin-bottom: 4rem;
+    }
+
+    #planos .planos {
+        display: block;
+    }
+
+    #planos .planos .plano {
+        width: 100%;
+        display: block;
+        margin: 0 0 2rem 0;
+        height: auto;
+    }
+
+    #planos .planos .plano button {
+        position: inherit;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+}
+
+/* Footer */
+footer{
+    background-color: var(--azul-medio);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+footer p {
+    color: var(--branco);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a {
+    padding: 12px;
+}
+
+footer ul li a img {
+    max-width: 40px;
+}
+
+button.button {
+    background-color: var(--azul-escuro);
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--branco);
+    font-weight: bold;
+    transition: background-color 0.15s ease;
+}
+
+button.button:hover {
+    background-color: var(--cinza-escuro);
+}
