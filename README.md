@@ -32,7 +32,7 @@
     <h3>Colaboradores</h3>
     <ul>
       <li>
-        ELiezer Bergamo
+        Eliezer Bergamo
       </li>
     </ul>
   </div>
